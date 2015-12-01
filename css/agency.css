@@ -866,9 +866,19 @@ body {
     webkit-tap-highlight-color: #fed136;
 }
 
-
+  #address
+  {
+  color:#fec503;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:22px;
+  float:left;
+  margin-left:80px;
+  clear:both;
+  
+  }
 #map {
     width: 500px;
-    height: 400px;
+    height: 350px;
     background-color: #CCC;
+	float:right;
   }
