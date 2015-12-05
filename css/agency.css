@@ -871,18 +871,19 @@ body {
   {
   color:black;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size:22px;
+  font-size:18px;
   float:left;
-  margin-left:80px;
+  margin-left:100px;
+margin-top: 80px;
   clear:both;
   
   }
 #map {
     width: 500px;
-    height: 350px;
+    height: 300px;
     background-color: #CCC;
 	float:right;
-<<<<<<< HEAD
+
   }
   
   .flex-container a:active,
