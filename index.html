@@ -34,6 +34,8 @@
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script>
       function initialize() {
       
@@ -130,7 +132,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <li>
                         <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
-                </ul>
+					<li>
+                        <a href="http://webmail.nautilus.ba/" target="_blank">Webmail</a>
+                    </li>
+				</ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -357,25 +362,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+				    <span> <img src="img/report.png" height="140px" width="140px"></img>
                     </span>
                     <h4 class="service-heading">Godišnji izvještaj</h4>
                     <p class="text-muted">Tekst....</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    <span> <img src="img/finReport.png" height="140px" width="140px"></img>
                     </span>
                     <h4 class="service-heading">Finansijski izvještaj</h4>
                     <p class="text-muted">Tekst....</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    <span> <img src="img/pr.png" height="140px" width="140px"></img>
                     </span>
                     <h4 class="service-heading">Obraćanje medijima</h4>
                     <p class="text-muted">Tekst....</p>
@@ -401,7 +400,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>Milan Todorović</h4>
                         <p id="TimPozicija">Predsjednik udruženja</p>
-                        <p id="TimMail"> milan.todorovic@nautilus.ba </p>
+                        <p id="TimMail"><a href="mailto:milan.todorovic@nautilus.ba"> milan.todorovic@nautilus.ba </a></p>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -418,7 +417,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Nela Muslim</h4>
                         <p id="TimPozicija">Sekretar udruženja </p>
-                        <p id="TimMail"> nela.muslim@nautilus.ba</p>
+                        <p id="TimMail"><a href="mailto:nela.muslim@nautilus.ba">nela.muslim@nautilus.ba</a></p>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -435,7 +434,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Amina Pirić</h4>
                         <p id="TimPozicija">Računovođa udruženja </p>
-                        <p id="TimMail"> amina.piric@nautilus.ba</p>
+                        <p id="TimMail"><a href="mailto:amina.piric@nautilus.ba"> amina.piric@nautilus.ba</a></p>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -454,7 +453,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
                          <h4>Irma Hadžić </h4>
                         <p id="TimPozicija">PR udruženja </p>
-                        <p id="TimMail"> irma.hadzic@nautilus.ba</p>
+                        <p id="TimMail"><a href="mailto:irma.hadzic@nautilus.ba"> irma.hadzic@nautilus.ba</a></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -472,7 +471,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
                         <h4>Diana Duškaj </h4> 
                         <p id="TimPozicija">Stručni saradnik za rad sa mladima </p>
-                        <p id="TimMail"> diana.duskaj@nautilus.ba</p>
+                        <p id="TimMail"><a href="mailto:diana.duskaj@nautilus.ba"> diana.duskaj@nautilus.ba</a></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -541,12 +540,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     <h3 class="section-subheading text-muted">Budite slobodni da nas kontaktirate!</h3>
                 </div>
             </div>
-            Udruženje mladih Nautilus
+            <div id="address">
+			Udruženje mladih Nautilus
+			<br>
             <br> +387 33 465-488
-            <br> Semira Frašte bb, 71000 Sarajevo, Bosnia and Herzegovina
-            <br> udruzenjenautilus@outlook.com
+            <br> Semira Frašte bb, 71000 Sarajevo, BiH
+            <br><a href="mailto:udruzenjenautilus@outlook.com"> udruzenjenautilus@outlook.com</a>
             <br> <br>
-
+			</div>
            <div id="map"></div>
 
             </div>
@@ -601,7 +602,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
                             <!-- Project Details Go Here -->
                             <h2>Prijatelji/ce bez granica</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/Projekat1/7.jpg" alt="">
+                            <div class="flex-container">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="img/Projekat1/1.jpg" alt=""/></a>
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/2.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/3.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			    </div><br><br>
                             <p>Projekat "Prijatelji/ce bez granica" je pokušao dati barem mali doprinos pomirenju ali i uvažavanju međusobnih različitosti i ukazivanju na sličnosti u kulturno-histrijskom smislu. Naravno, činjenicu da su sva ljudska bića koja zaslužuju da žive u miru i toleranciji. Takođe, kroz ovaj projekat su imalo priliku upoznati se sa različitim (drugim i drugačijim) kulturnim i istorijskim naslijeđem i imati priliku da izraze vlastito mišljenje o tome, dok će postojeće prostorije u kojima se sprovode SOS programi u SOS BiH i SOS Srbija prilagođene omladinskom radu i aktivizmu.
 Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno djelovanje mladih, uz respektovanje različitosti, multietničnosti i drugačije kulturno-historijsko naslijeđe.
 </p>
@@ -635,7 +652,23 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
                         <div class="modal-body">
                             <h2>Demokratija uživo!</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                              <div class="flex-container">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="img/Projekat1/1.jpg" alt=""/></a>
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/2.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/3.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			    </div><br><br>
                             <p>  Projekat „Demokratija uživo!“ je inicijativa udruženja kojom želimo pokazati mladima koje su to procedure glasanja i izborni sistem BiH, kako mogu pronaći kandidate na izbornim listama, te kako upoznati mlade s programima političkih partija. Također, ovim projektom smo mlade osvijestili kako mogu razumijeti program političkih partija u smislu poboljšanja položaja mladih. Budući da mladi ne razgovaraju u dovoljnoj mjeri s predstavnicima vlasti, kroz projekt smo omogućili mladima da se  direktno upoznati sa predstavnicima općinskog vijeća s područja Općine Novi Grad, koje donosi odluke na lokalnom nivou.
 
                             </p>
@@ -664,7 +697,23 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
                             <!-- Project Details Go Here -->
                             <h2>Uči, misli i djeluj – UMiD</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                              <div class="flex-container">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="img/Projekat1/1.jpg" alt=""/></a>
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/2.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat1/3.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			    </div><br><br>
                             <p>  Projekat „Uči, misli i djeluj – UMiD“ je vlasništvo od Instituta za razvoj mladih KULT, dok je udruženje mladih NAUTILUS drugi regionalni centar u Bosni i Hercegovini za pružanje pomoći i podrške pri prijavljivanju i informisanju kako se zasebni kursveri online platforme polažu. UMiD-om želimo osigurati veću uključenost mladih, razvijati njihovu društvenu odgovornost, utjecati na promjene stavova i prevazilaženje predrasuda, osnažiti i jačati partnerstva među njima, i na taj način jačati njihovo samopouzdanje. Tako mladi postaju građanima/kama koji preuzimaju odgovornost, te imaju pravo, ali i potrebu iskazati svoje mišljenje. Na taj način sudjeluju u planiranju i provođenju aktivnosti za mlade u zajednici, uključuju se u procese donošenja odluka (prije svih u vezi s mladima, ali i ostalih), kreirajući svoju budućnost.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Zatvori projekat</button>
                         </div>
@@ -755,9 +804,6 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
         </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -772,7 +818,15 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-
+    
+	<script>
+	$(document).ready(function () {
+		$('.flexslider').flexslider({
+			animation: 'fade',
+			controlsContainer: '.flexslider'
+		});
+	});
+	</script>
 </body>
 
 </html>
