@@ -3,7 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@font-face {
+    font-family: 'AllerDisplay';
+    src: url('fonts/AllerDisplay.ttf');
+    }
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -175,8 +179,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    font-family: 'AllerDisplay';
+    color: white;
+    font-size: 18pt;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -864,7 +869,7 @@ body {
 
   #address
   {
-  color:#fec503;
+  color:black;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:22px;
   float:left;
@@ -1082,7 +1087,9 @@ html[xmlns] .slides { display: block; }
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+
+
 }
-=======
+
   }
->>>>>>> origin/master
+
