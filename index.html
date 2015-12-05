@@ -603,7 +603,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                             <h2>Prijatelji/ce bez granica</h2>
                             <p class="item-intro text-muted"></p>
                             <div class="flex-container">
-				<div class="flexslider">
+				<div class="flexslider" id="first">
+				<script>
+				$(document).ready(function () {
+					$('#first').flexslider({
+						animation: 'fade',
+						controlsContainer: '#first'
+					});
+				});
+				</script>
 					<ul class="slides">
 						<li>
 							<a href="#"><img src="img/Projekat1/1.jpg" alt=""/></a>
@@ -652,7 +660,41 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
                         <div class="modal-body">
                             <h2>Demokratija uživo!</h2>
                             <p class="item-intro text-muted"></p>
-                         
+                            <div class="flex-container">
+				<div class="flexslider" id="second">
+				<script>
+				$(document).ready(function () {
+					$('#second').flexslider({
+						animation: 'fade',
+						controlsContainer: '#second'
+					});
+				});
+				</script>
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="img/Projekat2/1.jpg" alt=""/></a>
+						</li>
+						
+						<li>
+							<img src="img/Projekat2/slika2.jpg" alt="" />
+						</li>
+						<li>
+							<img src="img/Projekat2/slika3.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat2/slika4.jpg" alt="" />
+						</li>
+						<li>
+							<img src="img/Projekat2/slika5.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat2/slika6.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			    </div><br><br>
                             <p>  Projekat „Demokratija uživo!“ je inicijativa udruženja kojom želimo pokazati mladima koje su to procedure glasanja i izborni sistem BiH, kako mogu pronaći kandidate na izbornim listama, te kako upoznati mlade s programima političkih partija. Također, ovim projektom smo mlade osvijestili kako mogu razumijeti program političkih partija u smislu poboljšanja položaja mladih. Budući da mladi ne razgovaraju u dovoljnoj mjeri s predstavnicima vlasti, kroz projekt smo omogućili mladima da se  direktno upoznati sa predstavnicima općinskog vijeća s područja Općine Novi Grad, koje donosi odluke na lokalnom nivou.
 
                             </p>
@@ -681,7 +723,37 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
                             <!-- Project Details Go Here -->
                             <h2>Uči, misli i djeluj – UMiD</h2>
                             <p class="item-intro text-muted"></p>
-                            
+                            <div class="flex-container">
+				<div class="flexslider" id="third">
+				<script>
+				$(document).ready(function () {
+					$('#third').flexslider({
+						animation: 'fade',
+						controlsContainer: '#third'
+					});
+				});
+				</script>
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="img/Projekat3/slika1.jpg" alt=""/></a>
+						</li>
+						
+						<li>
+							<img src="img/Projekat3/slika2.jpg" alt="" />
+						</li>
+						
+						<li>
+							<img src="img/Projekat3/slika3.jpg" alt="" />
+						</li>
+						<li>
+							<img src="img/Projekat3/slika4.jpg" alt="" />
+						</li>
+						<li>
+							<img src="img/Projekat3/slika5.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+			    </div><br><br>
                             <p>  Projekat „Uči, misli i djeluj – UMiD“ je vlasništvo od Instituta za razvoj mladih KULT, dok je udruženje mladih NAUTILUS drugi regionalni centar u Bosni i Hercegovini za pružanje pomoći i podrške pri prijavljivanju i informisanju kako se zasebni kursveri online platforme polažu. UMiD-om želimo osigurati veću uključenost mladih, razvijati njihovu društvenu odgovornost, utjecati na promjene stavova i prevazilaženje predrasuda, osnažiti i jačati partnerstva među njima, i na taj način jačati njihovo samopouzdanje. Tako mladi postaju građanima/kama koji preuzimaju odgovornost, te imaju pravo, ali i potrebu iskazati svoje mišljenje. Na taj način sudjeluju u planiranju i provođenju aktivnosti za mlade u zajednici, uključuju se u procese donošenja odluka (prije svih u vezi s mladima, ali i ostalih), kreirajući svoju budućnost.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Zatvori projekat</button>
                         </div>
@@ -787,14 +859,7 @@ Cilj projekat je da ostvari podsticajno okruženja za kreativno i inovativno dje
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     
-	<script>
-	$(document).ready(function () {
-		$('.flexslider').flexslider({
-			animation: 'fade',
-			controlsContainer: '.flexslider'
-		});
-	});
-	</script>
+	
 </body>
 
 </html>
