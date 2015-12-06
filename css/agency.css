@@ -8,6 +8,11 @@
     font-family: 'AllerDisplay';
     src: url('fonts/AllerDisplay.ttf');
     }
+
+    @font-face {
+    font-family: 'AllerLtlt';
+    src: url('fonts/AllerLtlt.ttf');
+    }
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1094,3 +1099,5 @@ html[xmlns] .slides { display: block; }
 
   }
 
+#zaDrugiDont{font-family: 'AllerLtlt';
+font-size: 5pt;}
