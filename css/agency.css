@@ -574,6 +574,10 @@ section h3.section-subheading {
 .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
+.timeline-bodyErasmus
+{
+ margin-left: 150px;
+}
 
 @media(min-width:768px) {
     .timeline:before {
@@ -1126,3 +1130,21 @@ html[xmlns] .slides { display: block; }
 
 #zaDrugiDont{font-family: 'AllerLtlt';
 font-size: 5pt;}
+
+.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
+}
+
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+	width: 800px;
+}
