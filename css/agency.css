@@ -240,6 +240,31 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503;
 }
 
+#volontiraj a
+{
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size:24px;
+	letter-spacing: 1px;
+    color: #fed136;
+	outline: 0;
+	border-radius: 0;
+}
+
+#volontiraj a:focus
+{
+ text-decoration:none;
+ color: #fed136;
+ 
+}
+#volontiraj a:hover
+{
+ text-decoration:none;
+ color: #fff;
+ 
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
